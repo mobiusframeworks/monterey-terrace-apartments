@@ -229,6 +229,37 @@ body {
     color: #555;
 }
 
+.hero-text-moved {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.hero-text-moved h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-text-moved .address {
+    font-size: 18px;
+    font-weight: 300;
+    color: #555;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+.hero-text-moved .hero-tagline {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff6b35;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
 /* Vacancies Section */
 .vacancies-section {
     padding: 60px 0;
