@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monterey Terrace Apartments - Downtown Gilroy, CA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="icon">📞</i> (209) 594-7208</span>
+                    <span><i class="icon">✉️</i> 7680monterey@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>MONTEREY TERRACE</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-tab="home">HOME</a></li>
+                    <li><a href="#" class="nav-link" data-tab="gallery">GALLERY</a></li>
+                    <li><a href="#" class="nav-link" data-tab="floorplans">FLOOR PLANS</a></li>
+                    <li><a href="#" class="nav-link" data-tab="amenities">AMENITIES</a></li>
+                    <li><a href="#" class="nav-link" data-tab="contact">CONTACT</a></li>
+                </ul>
+                <div class="resident-login">
+                    <a href="#login">RESIDENT LOGIN</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Tab Content -->
+    <div class="tab-content active" id="home-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/hero-monterey-terrace.jpg" alt="Monterey Terrace Apartments">
+            </div>
+            <div class="hero-content">
+                <h1>Monterey Terrace Apartments</h1>
+                <p class="address">7680 Monterey Road, Downtown Gilroy, CA</p>
+                <p class="hero-tagline">Ultra High End Apartment Living</p>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <h2 class="section-title">Welcome Home</h2>
+                <h3 class="property-name">Monterey Terrace Apartments</h3>
+                <p class="welcome-text">
+                    This is a beautifully appointed apartment that you will love to call home. Impress all your friends and family with new high end stainless steel appliances, designer flooring, granite counters, and much more! Located in downtown Gilroy, just four blocks from the CalTrain Station, Monterey Terrace offers nearly new high quality construction with secure building access, an elegant lobby, and wide hallways throughout.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Photos Section -->
+        <section class="featured-photos-section">
+            <div class="container">
+                <div class="featured-photos-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="images/kitchen%20gilroy.webp" alt="Modern Kitchen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/lobby%20gilroy.jpg" alt="Elegant Lobby">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/gilroy%20outside.jpg" alt="Building Exterior">
+                        </div>
+                    </div>
+                    <button class="carousel-prev">‹</button>
+                    <button class="carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gallery Tab Content -->
+    <div class="tab-content" id="gallery-content">
+        <div class="container">
+            <div class="tab-section">
+                <h2 class="section-title-dark">Photo Gallery</h2>
+                <div class="photo-grid">
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/kitchen%20gilroy.webp" alt="Modern Kitchen">
+                        <div class="photo-overlay">Modern Kitchen</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/kitchen2%20gilroy.webp" alt="Kitchen Details">
+                        <div class="photo-overlay">Kitchen Details</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/kitchen%204%20gilroy.webp" alt="Kitchen & Dining">
+                        <div class="photo-overlay">Kitchen & Dining</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/bathroom%20gilroy.webp" alt="Bathroom">
+                        <div class="photo-overlay">Bathroom</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/bathroom%202%20gilroy.webp" alt="Bathroom Details">
+                        <div class="photo-overlay">Bathroom Details</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/gilroy.webp" alt="Living Space">
+                        <div class="photo-overlay">Living Space</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/gilroy1.webp" alt="Interior View">
+                        <div class="photo-overlay">Interior View</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/washer%20dryer%20gilroy.webp" alt="In-Unit Washer & Dryer">
+                        <div class="photo-overlay">In-Unit Washer & Dryer</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/lobby%20gilroy.jpg" alt="Elegant Lobby">
+                        <div class="photo-overlay">Elegant Lobby</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/elevator.jpg" alt="Building Elevator">
+                        <div class="photo-overlay">Building Elevator</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/airconditioing%20and%20patio.jpg" alt="Private Balcony & AC">
+                        <div class="photo-overlay">Private Balcony</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal(this)">
+                        <img src="images/gilroy%20outside.jpg" alt="Building Exterior">
+                        <div class="photo-overlay">Building Exterior</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floor Plans Tab Content -->
+    <div class="tab-content" id="floorplans-content">
+        <div class="container">
+            <div class="tab-section">
+                <h2 class="section-title-dark">Floor Plans</h2>
+
+                <!-- Ground Floor Accordion -->
+                <div class="floor-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Ground Floor - Commercial Space</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="floorplan-compact-grid">
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/ground/ground%20floor%20floor%20plan.gif', 'Ground Floor Layout')">
+                                    <img src="images/floorplans/ground/ground%20floor%20floor%20plan.gif" alt="Ground Floor Plan">
+                                    <p>Ground Floor Layout</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/ground/floor%20plan%20sq%20footage.jpg', 'Square Footage Details')">
+                                    <img src="images/floorplans/ground/floor%20plan%20sq%20footage.jpg" alt="Square Footage Details">
+                                    <p>Square Footage Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Floor Accordion -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>2nd Floor - Residential Units</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="floor-description">Multiple unit configurations available with modern finishes and amenities.</p>
+                            <div class="floorplan-compact-grid">
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/2nd%20floor%20plan%20overview%20gilroy.gif', 'Floor Overview')">
+                                    <img src="images/floorplans/2nd/2nd%20floor%20plan%20overview%20gilroy.gif" alt="2nd Floor Overview">
+                                    <p>Floor Overview</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20a%20second%20floor%20overview%20gilroy.jpg', 'Model A')">
+                                    <img src="images/floorplans/2nd/model%20a%20second%20floor%20overview%20gilroy.jpg" alt="Model A">
+                                    <p>Model A</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20b%20second%20floor%20overview%20gilroy.jpg', 'Model B')">
+                                    <img src="images/floorplans/2nd/model%20b%20second%20floor%20overview%20gilroy.jpg" alt="Model B">
+                                    <p>Model B</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20c%202nd%20floor%20overviw%20gilroy.jpg', 'Model C')">
+                                    <img src="images/floorplans/2nd/model%20c%202nd%20floor%20overviw%20gilroy.jpg" alt="Model C">
+                                    <p>Model C</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20d%20overview%202nd%20floor%20gilroy.jpg', 'Model D')">
+                                    <img src="images/floorplans/2nd/model%20d%20overview%202nd%20floor%20gilroy.jpg" alt="Model D">
+                                    <p>Model D</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20e%20second%20floor%20overview%20gilroy.jpg', 'Model E')">
+                                    <img src="images/floorplans/2nd/model%20e%20second%20floor%20overview%20gilroy.jpg" alt="Model E">
+                                    <p>Model E</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/2nd/model%20f%202nd%20floor%20overview%20gilroy.jpg', 'Model F')">
+                                    <img src="images/floorplans/2nd/model%20f%202nd%20floor%20overview%20gilroy.jpg" alt="Model F">
+                                    <p>Model F</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd Floor Accordion -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>3rd Floor - Residential Units</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="floor-description">Premium top-floor units with enhanced views and finishes.</p>
+                            <div class="floorplan-compact-grid">
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/3rd%20floor%20overview%20gilry.gif', 'Floor Overview')">
+                                    <img src="images/floorplans/3rd/3rd%20floor%20overview%20gilry.gif" alt="3rd Floor Overview">
+                                    <p>Floor Overview</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20a.png', 'Model A')">
+                                    <img src="images/floorplans/3rd/model%20a.png" alt="Model A">
+                                    <p>Model A</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20b.png', 'Model B')">
+                                    <img src="images/floorplans/3rd/model%20b.png" alt="Model B">
+                                    <p>Model B</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20c.png', 'Model C')">
+                                    <img src="images/floorplans/3rd/model%20c.png" alt="Model C">
+                                    <p>Model C</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20d.png', 'Model D')">
+                                    <img src="images/floorplans/3rd/model%20d.png" alt="Model D">
+                                    <p>Model D</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20e.png', 'Model E')">
+                                    <img src="images/floorplans/3rd/model%20e.png" alt="Model E">
+                                    <p>Model E</p>
+                                </div>
+                                <div class="floorplan-thumbnail" onclick="openFloorplanModal('images/floorplans/3rd/model%20f.png', 'Model F')">
+                                    <img src="images/floorplans/3rd/model%20f.png" alt="Model F">
+                                    <p>Model F</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amenities Tab Content -->
+    <div class="tab-content" id="amenities-content">
+        <div class="container">
+            <div class="tab-section">
+                <h2 class="section-title-dark">Amenities</h2>
+
+                <div class="amenities-grid">
+                <div class="amenity-category">
+                    <h3>Property Amenities</h3>
+                    <ul class="amenity-list">
+                        <li>Nearly New High Quality Construction</li>
+                        <li>Secure Building Access</li>
+                        <li>Four Blocks from CalTrain Station</li>
+                        <li>Elevator Access</li>
+                        <li>Elegant Lobby</li>
+                        <li>Wide Hallways</li>
+                    </ul>
+                </div>
+
+                <div class="amenity-category">
+                    <h3>Unit Amenities</h3>
+                    <ul class="amenity-list">
+                        <li>Private Balcony</li>
+                        <li>Central Forced Air/Heat</li>
+                        <li>Granite Slab Countertops in Kitchen and Bath</li>
+                        <li>Designer Hardwood Kitchen Floors</li>
+                        <li>Built-in Over the Range Microwave</li>
+                        <li>Stainless Steel Appliances</li>
+                        <li>Washer and Dryer in Each Unit</li>
+                    </ul>
+                </div>
+
+                <div class="amenity-category">
+                    <h3>Appliances Included</h3>
+                    <ul class="amenity-list">
+                        <li>Refrigerator</li>
+                        <li>Over the Range Microwave</li>
+                        <li>Dishwasher</li>
+                        <li>Oven/Range</li>
+                    </ul>
+                </div>
+
+                <div class="amenity-category">
+                    <h3>Pet Policy</h3>
+                    <ul class="amenity-list">
+                        <li>Cats Allowed</li>
+                        <li>Small Dogs Allowed (Under 15lbs)</li>
+                        <li>Pet Rent: $50/pet/month</li>
+                        <li>Pet Deposit: $500/pet (Refundable)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lease-terms">
+                <h3>Lease Terms</h3>
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <strong>Rent:</strong> Starting at $2,095/month
+                    </div>
+                    <div class="term-item">
+                        <strong>Application Fee:</strong> $50
+                    </div>
+                    <div class="term-item">
+                        <strong>Security Deposit:</strong> $1,500
+                    </div>
+                    <div class="term-item">
+                        <strong>Minimum Lease:</strong> 12 months
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Tab Content -->
+    <div class="tab-content" id="contact-content">
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Monterey Terrace Apartments</h3>
+                        <p>7680 Monterey Road<br>
+                        Downtown Gilroy, CA</p>
+                        <p>Phone: (209) 594-7208<br>
+                        Email: 7680monterey@gmail.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#" class="nav-link" data-tab="home">Home</a></li>
+                            <li><a href="#" class="nav-link" data-tab="gallery">Gallery</a></li>
+                            <li><a href="#" class="nav-link" data-tab="floorplans">Floor Plans</a></li>
+                            <li><a href="#" class="nav-link" data-tab="amenities">Amenities</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Amanda</h3>
+                        <p>For leasing inquiries, please contact:<br>
+                        Amanda<br>
+                        Phone: (209) 594-7208<br>
+                        Email: 7680monterey@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Monterey Terrace Apartments. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Floorplan Modal -->
+    <div id="floorplanModal" class="modal">
+        <span class="modal-close" onclick="closeFloorplanModal()">&times;</span>
+        <img class="modal-content" id="floorplanModalImage">
+        <div id="floorplanModalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
