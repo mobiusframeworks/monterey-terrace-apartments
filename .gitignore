@@ -36,3 +36,4 @@ logs
 # Editor backup files
 *~
 *.bak
+.vercel
