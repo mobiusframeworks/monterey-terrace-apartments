@@ -85,6 +85,17 @@ body {
     padding: 15px 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    height: 70px;
+    width: auto;
+}
+
 .logo h1 {
     font-size: 24px;
     font-weight: 700;
@@ -505,6 +516,14 @@ body {
 
     .mobile-menu-toggle {
         display: block;
+    }
+
+    .header-logo {
+        height: 35px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
     }
 
     .hero-content h1 {
