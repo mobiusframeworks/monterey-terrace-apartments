@@ -12,11 +12,60 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monterey Terrace Apartments - Downtown Gilroy, CA</title>
+    <title>High End Apartments in Gilroy, CA | Monterey Terrace</title>
+    <meta name="description" content="Monterey Terrace offers high end apartments in downtown Gilroy, CA. Modern finishes, in-unit washer/dryer, secure building access, and just 4 blocks from Caltrain. Pet-friendly. Schedule a tour today.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://monterey-terrace-apartments.vercel.app/">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="High End Apartments in Gilroy, CA | Monterey Terrace">
+    <meta property="og:description" content="Modern apartments in downtown Gilroy with high-end finishes, in-unit washer/dryer, secure access, and Caltrain proximity. Pet-friendly.">
+    <meta property="og:url" content="https://monterey-terrace-apartments.vercel.app/">
+    <meta property="og:image" content="https://monterey-terrace-apartments.vercel.app/images/hero-monterey-terrace-1.jpg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ApartmentComplex",
+        "name": "Monterey Terrace Apartments",
+        "description": "High end apartments in downtown Gilroy, CA featuring modern finishes, in-unit washer/dryer, secure building access, and convenient Caltrain proximity.",
+        "url": "https://monterey-terrace-apartments.vercel.app/",
+        "telephone": "+1-209-594-7208",
+        "email": "7680monterey@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7680 Monterey Road",
+            "addressLocality": "Gilroy",
+            "addressRegion": "CA",
+            "postalCode": "95020",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.0058",
+            "longitude": "-121.5683"
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "In-Unit Washer/Dryer"},
+            {"@type": "LocationFeatureSpecification", "name": "Secure Building Access"},
+            {"@type": "LocationFeatureSpecification", "name": "Elevator"},
+            {"@type": "LocationFeatureSpecification", "name": "Assigned Parking"},
+            {"@type": "LocationFeatureSpecification", "name": "Pet-Friendly"}
+        ],
+        "petsAllowed": true,
+        "numberOfAvailableAccommodationUnits": {
+            "@type": "QuantitativeValue",
+            "unitText": "apartments"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Top Contact Bar -->
@@ -65,7 +114,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-image">
-                <img src="images/hero-monterey-terrace-1.jpg" alt="Monterey Terrace Apartments">
+                <img src="images/hero-monterey-terrace-1.jpg" alt="Monterey Terrace Apartments exterior in downtown Gilroy, CA">
             </div>
         </section>
 
@@ -75,9 +124,9 @@
                 <h2 class="section-title">Welcome Home</h2>
                 <h3 class="property-name">Monterey Terrace Apartments</h3>
                 <p class="address">7680 Monterey Road, Downtown Gilroy, CA</p>
-                <p class="hero-tagline">Ultra High End Apartment Living</p>
+                <p class="hero-tagline">High End Apartments in Gilroy</p>
                 <p class="welcome-text">
-                    This is a beautifully appointed apartment that you will love to call home. Impress all your friends and family with new high end stainless steel appliances, designer flooring, granite counters, and much more! Located in downtown Gilroy, just four blocks from the CalTrain Station, Monterey Terrace offers nearly new high quality construction with secure building access, an elegant lobby, and wide hallways throughout.
+                    Looking for apartments in Gilroy? Monterey Terrace offers high end apartment living in the heart of downtown. Our modern units feature stainless steel appliances, designer flooring, granite counters, and in-unit washer and dryer. Located just four blocks from Caltrain, we offer nearly new construction with secure building access, an elegant lobby, and assigned parking. We're also pet-friendly for cats and small dogs. Schedule a tour to see why residents love calling Monterey Terrace home.
                 </p>
             </div>
         </section>
@@ -88,13 +137,13 @@
                 <div class="featured-photos-carousel">
                     <div class="carousel-container">
                         <div class="carousel-slide active">
-                            <img src="images/kitchen%20gilroy.webp" alt="Modern Kitchen">
+                            <img src="images/kitchen%20gilroy.webp" alt="Modern kitchen with granite counters in Gilroy apartment">
                         </div>
                         <div class="carousel-slide">
-                            <img src="images/lobby%20gilroy.jpg" alt="Elegant Lobby">
+                            <img src="images/lobby%20gilroy.jpg" alt="Elegant lobby at Monterey Terrace Apartments Gilroy">
                         </div>
                         <div class="carousel-slide">
-                            <img src="images/gilroy%20outside.jpg" alt="Building Exterior">
+                            <img src="images/gilroy%20outside.jpg" alt="Monterey Terrace apartment building exterior Gilroy CA">
                         </div>
                     </div>
                     <button class="carousel-prev">‹</button>
@@ -137,7 +186,7 @@
                 <h2 class="section-title-dark">Photo Gallery</h2>
                 <div class="photo-grid">
                     <div class="photo-item" onclick="openModal(this)">
-                        <img src="images/kitchen%20gilroy.webp" alt="Modern Kitchen">
+                        <img src="images/kitchen%20gilroy.webp" alt="Modern kitchen with granite counters in Gilroy apartment">
                         <div class="photo-overlay">Modern Kitchen</div>
                     </div>
                     <div class="photo-item" onclick="openModal(this)">
@@ -169,7 +218,7 @@
                         <div class="photo-overlay">Building Elevator</div>
                     </div>
                     <div class="photo-item" onclick="openModal(this)">
-                        <img src="images/gilroy%20outside.jpg" alt="Building Exterior">
+                        <img src="images/gilroy%20outside.jpg" alt="Monterey Terrace apartment building exterior Gilroy CA">
                         <div class="photo-overlay">Building Exterior</div>
                     </div>
                 </div>
