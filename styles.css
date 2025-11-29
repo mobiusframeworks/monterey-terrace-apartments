@@ -31,8 +31,19 @@ body {
     align-items: center;
 }
 
-.contact-info span {
+.contact-info span,
+.contact-info .contact-link {
     margin-right: 25px;
+}
+
+.contact-info .contact-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .contact-link:hover {
+    color: #ff6b35;
 }
 
 .contact-info .icon {
@@ -524,14 +535,69 @@ body {
 }
 
 @media (max-width: 640px) {
-    .top-bar-content {
-        flex-direction: column;
-        gap: 10px;
+    .top-bar {
+        padding: 6px 0;
+        overflow: hidden;
     }
 
-    .contact-info span {
-        display: block;
-        margin-bottom: 5px;
+    .top-bar .container {
+        padding: 0 8px;
+        max-width: 100%;
+    }
+
+    .top-bar-content {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12px !important;
+        max-width: 100%;
+    }
+
+    .contact-info {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    .contact-info span,
+    .contact-info .contact-link {
+        display: inline-flex !important;
+        align-items: center;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        font-size: 11px;
+        white-space: nowrap;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact-info .icon {
+        margin-right: 2px;
+        font-size: 11px;
+    }
+
+    .social-links {
+        margin-left: 0 !important;
+        display: inline-flex !important;
+        flex-shrink: 0;
+    }
+
+    .social-links a {
+        width: 22px;
+        height: 22px;
+        margin-left: 0;
+    }
+
+    .social-links a svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .welcome-section {
+        padding: 25px 0 40px;
     }
 
     .hero {
