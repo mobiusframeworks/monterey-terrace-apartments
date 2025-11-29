@@ -690,6 +690,23 @@ body {
     background-color: #b61f1f;
 }
 
+/* Google Map Section */
+.google-map-section {
+    padding: 40px 0 60px;
+    background-color: #f9f9f9;
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+}
+
 .featured-photos-carousel {
     position: relative;
     max-width: 900px;
