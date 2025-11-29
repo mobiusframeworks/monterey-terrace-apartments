@@ -597,7 +597,11 @@ body {
     }
 
     .welcome-section {
-        padding: 15px 0 40px;
+        padding: 0 0 40px;
+    }
+
+    .welcome-section .section-title {
+        padding-top: 15px;
     }
 
     .hero {
